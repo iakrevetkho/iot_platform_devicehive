@@ -22,6 +22,8 @@ sudo apt-get install docker-ce
 # Clone DeviceHive git repo:
 git clone https://github.com/devicehive/devicehive-docker.git
 
+cd devicehive-docker/rdbms-image/
+
 # Deploy DeviceHive to docker
 sudo docker-compose -f docker-compose.yml /
 	-f dh_plugin.yml -f mqtt-brokers.yml /
