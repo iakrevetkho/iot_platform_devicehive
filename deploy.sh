@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 # remove old docker versions
 sudo apt-get remove docker docker-engine docker.io
