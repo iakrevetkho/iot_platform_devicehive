@@ -25,9 +25,9 @@ git clone https://github.com/devicehive/devicehive-docker.git
 cd devicehive-docker/rdbms-image/
 
 # Deploy DeviceHive to docker
-sudo docker-compose -f docker-compose.yml /
-	-f dh_plugin.yml -f mqtt-brokers.yml /
-	-f monitoring.yml -f cadvisor.yml /
+sudo docker-compose -f docker-compose.yml \
+	-f dh_plugin.yml -f mqtt-brokers.yml \
+	-f monitoring.yml -f cadvisor.yml \
 	-f devicehive-metrics.yml up -d
 
 # Deploy Portainer for easiest container management
