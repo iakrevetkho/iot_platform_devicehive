@@ -34,4 +34,4 @@ sudo docker-compose -f docker-compose.yml \
 sudo docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
 
 # Deploy Node-Red
-sudo docker run -d -p 1880:1880 --name Node-Red nodered/node-red-docker --restart always
+sudo docker run -d -p 1880:1880 --restart=always --name Node-Red nodered/node-red-docker
