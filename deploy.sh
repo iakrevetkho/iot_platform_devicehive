@@ -17,7 +17,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 
 # Install docker-ce:
-sudo apt-get install docker-ce
+sudo apt-get install docker-ce docker-compose
 
 # Clone DeviceHive git repo:
 git clone https://github.com/devicehive/devicehive-docker.git
