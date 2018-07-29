@@ -37,7 +37,7 @@ sudo docker-compose -f docker-compose.yml \
 	-f devicehive-metrics.yml up -d
 
 # Deploy Portainer for easiest container management
-sudo docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+sudo docker run -d -p 9000:9000 --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
 
 # Deploy Node-Red
 sudo docker run -d -p 1880:1880 --restart=always --name Node-Red nodered/node-red-docker
